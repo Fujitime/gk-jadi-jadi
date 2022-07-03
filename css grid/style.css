@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}   
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #ddd;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 50px;
+}
+/* container */
+.container {
+    display: grid;
+    gap: 10px;
+}
+/* header */
+.header {
+    display: grid;
+    grid-template-areas: 
+    'hero hero feature-1'
+    'hero hero feature-2';
+}
+.hero {
+    grid-area: hero;
+    min-height: 300px;
+    background-image: url(img/setup.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+
+}
+.hero h2, .hero p{
+    display: none;
+}
+.features{
+    background-color: #000;
+    color: white;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.feature-1{
+    grid-area: feature-1;
+    background-image: url(img/fbk.jpg);
+    background-size: cover;
+}
+.feature-2{
+    grid-area: feature-2;
+    background-image: url(img/projectred.jpg);
+    background-size: cover;
+}
+.features .price{
+    font-size: 3em;
+    font-weight: 200;
+}
+/* navigasi */
+.menu{
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+
+}
+.menu .brand{
+    font-size: 1.3em;
+    color: #333;
+
+}
+.menu ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid: 5px;
+   
+}
+.menu a{
+    display: block;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+
+}
+/* responsive breakpoint */
+@media (max-width: 1024px){
+    .menu {
+        order: inherit;
+        grid-template-columns: 1fr;
+    }
+    .hero>*{
+        display: block;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+}
+@media (max-width: 766px){
+    .menu .brand{
+        display: none;
+    }
+}
+@media (max-width: 500px){
+}
