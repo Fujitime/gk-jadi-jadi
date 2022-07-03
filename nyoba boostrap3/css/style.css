@@ -1,0 +1,73 @@
+html{
+    position: relative;
+    
+}
+body{
+    margin-bottom: 100px;
+}
+.jumbotron{
+    background-color: #000;
+   
+}
+.about{
+    background-color: rgba(0, 0, 0, 0.932);
+}
+.anu{
+    color: lime;
+}
+.jumbotron img{
+    width: 250px;  
+    border: 5px solid limegreen;
+}
+ hr{
+    width: 250px;
+    border-top: 5px solid lime;
+}
+.aku :hover{
+    color: aqua;
+    transition: .2s;
+    background-color: rgba(0, 0, 0, 0.112);
+    
+  
+}
+
+.row h2{
+    color: coral;
+}
+.jumbotron h1{
+    color: aqua;
+}
+.jumbotron p{
+    color: aquamarine;
+}
+section {
+    min-height: 300px;
+}
+.portfolio{
+    background-color: rgba(0, 0, 0, 0.842)
+}
+.Contact{
+    min-height: 500px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: chocolate;
+    padding-top: 30px;
+}
+@keyframes anj{
+    0%{
+        background-color: blue;
+    }
+    25%{
+        background-color: aquamarine;
+    }
+    50%{
+        background-color: blueviolet;
+    }
+    100%{
+        background-color: cadetblue;
+    }
+}
